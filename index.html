@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Travel Wishlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌍 My Travel Wishlist</h1>
+    <p>Plan your dream trips — Add, View, Edit, and Delete destinations!</p>
+  </header>
+
+  <div class="form-card">
+    <input type="text" id="place" placeholder="Destination Name">
+    <input type="url" id="image" placeholder="Image URL (optional)">
+    <textarea id="desc" placeholder="Short Description"></textarea>
+    <select id="priority">
+      <option value="Must Visit">Must Visit</option>
+      <option value="Maybe">Maybe</option>
+      <option value="Later">Later</option>
+    </select>
+    <button onclick="addDestination()">Add Destination</button>
+  </div>
+
+  <section id="cards-container"></section>
+
+  <footer>
+    <p>✨ Designed by Mohmudha Hiba Falha S ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

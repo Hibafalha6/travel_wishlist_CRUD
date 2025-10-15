@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.form-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  max-width: 500px;
+  margin: 0 auto 30px;
+  backdrop-filter: blur(10px);
+}
+
+input, textarea, select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  background: #ff8c00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffa733;
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  color: #333;
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0;
+  color: #7b2ff7;
+}
+
+.card-content p {
+  font-size: 14px;
+}
+
+.priority {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.must { background: #ff4b5c; color: white; }
+.maybe { background: #ffb347; color: white; }
+.later { background: #00b894; color: white; }
+
+.action-btn {
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit { background: #6c5ce7; color: white; }
+.delete { background: #d63031; color: white; }
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
